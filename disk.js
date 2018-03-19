@@ -44,7 +44,8 @@ DiskStorage.prototype._handleFile = function _handleFile (req, file, cb) {
           destination: destination,
           filename: filename,
           path: finalPath,
-          size: outStream.bytesWritten
+          size: outStream.bytesWritten,
+          storage : 'disk'
         })
       })
     })
